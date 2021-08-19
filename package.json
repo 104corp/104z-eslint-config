@@ -1,17 +1,14 @@
 {
-  "name": "@104corp/eslint-config-104z",
+  "name": "eslint-config-104z",
   "version": "1.0.0",
   "description": "A shareable ESLint config for 104z",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/eslint-config-standard": "^5.1.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
