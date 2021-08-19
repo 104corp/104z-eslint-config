@@ -1,5 +1,5 @@
 {
-  "name": "@104corp/eslint-config-104z",
+  "name": "eslint-config-104z",
   "version": "1.0.0",
   "description": "A shareable ESLint config for 104z",
   "main": "index.js",
