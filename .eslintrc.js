@@ -66,7 +66,7 @@ module.exports = {
     ],
     'vue/component-name-in-template-casing': ['error', 'PascalCase', {
       registeredComponentsOnly: false,
-      ignores: ['/^router-/', '/^keep-/', '/^transition/']
+      ignores: ['/^router-/', '/^keep-/', '/^transition/', '/^component/']
     }]
   }
 }
