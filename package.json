@@ -1,6 +1,6 @@
 {
   "name": "@104corp/eslint-config-104z",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A shareable ESLint config for 104z",
   "main": "index.js",
   "scripts": {
