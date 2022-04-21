@@ -1,23 +1,15 @@
 module.exports = {
   root: true,
   env: {
-    node: true,
-    'vue/setup-compiler-macros': true
+    node: true
   },
   extends: [
-    'plugin:vue/vue3-recommended',
-    'standard'
+    'plugin:vue/recommended',
+    '@vue/standard'
   ],
-  overrides: [
-    {
-      files: [
-        '**/?(*.)test.[jt]s?(x)'
-      ],
-      env: {
-        jest: true
-      }
-    }
-  ],
+  parserOptions: {
+    parser: 'babel-eslint'
+  },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
@@ -75,12 +67,6 @@ module.exports = {
     'vue/component-name-in-template-casing': ['error', 'PascalCase', {
       registeredComponentsOnly: false,
       ignores: ['/^router-/', '/^keep-/', '/^transition/', '/^component/']
-    }],
-    // vue 檔案名稱需要為多字
-    'vue/multi-word-component-names': ['error', {
-      ignores: ['index']
-    }],
-    // script setup 變數自動 return 所以不一定需要使用
-    'vue/script-setup-uses-vars': 'error'
+    }]
   }
 }
