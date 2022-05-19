@@ -49,7 +49,7 @@ module.exports = {
     // 物件取值不能有空格 obj  .  foo => obj.foo
     "no-whitespace-before-property": "error",
     // 最大連續空行数
-    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1, "maxBOF": 0 }],
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
     // 去除前後空行
     "padded-blocks": ["error", "never"],
     // 操作符是否空格 a=0 => a = 0
@@ -68,6 +68,7 @@ module.exports = {
     "spaced-comment": ["error", "always"],
     // 使用單引號，字串中可以包含了一個其它引號 "a string containing 'single' quotes"
     quotes: ["error", "single", { "avoidEscape": true }],
+    "eol-last": ["error", "never"],
     'vue/order-in-components': ['error', {
       order: [
         'el',
