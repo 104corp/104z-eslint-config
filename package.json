@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "@vue/eslint-config-standard": "^5.1.2",
-    "@vue/eslint-config-prettier": "^7.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.5.0",
     "eslint-config-standard": "^16.0.3",
