@@ -14,53 +14,53 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     // 不連續空格
-    "no-multi-spaces": "error",
+    'no-multi-spaces': 'error',
     // 空2格
-    "indent": ["error", 2],
+    'indent': ['error', 2],
     // 物件空格 {   a:b   } => { a:b }
-    "object-curly-spacing": ["error", "always"],
+    'object-curly-spacing': ['error', 'always'],
     // 括號去除空格 foo(   'bar'   ) =>  foo('bar');
-    "space-in-parens": ["error", "never"],
-    // 物件前後只有一個空格{ "foo"  :    42 } => { "foo": 42 };
-    "key-spacing": ["error", { mode: "strict" }],
+    'space-in-parens': ['error', 'never'],
+    // 物件前後只有一個空格{ 'foo'  :    42 } => { 'foo': 42 };
+    'key-spacing': ['error', { mode: 'strict' }],
     // 逗號前后的空格  [1,     2,  3  ,4] => [1, 2, 4, 4]
-    "comma-spacing": ["error", { "before": false, "after": true }],
+    'comma-spacing': ['error', { 'before': false, 'after': true }],
     // array 内使用空格 [ 1,2   ] => [ 1,2 ]
-    "array-bracket-spacing": ["error", "always"],
+    'array-bracket-spacing': ['error', 'always'],
     // if else 风格
-    "brace-style": ["error", "1tbs"],
+    'brace-style': ['error', '1tbs'],
     // call 函数空格 fn  () => fn()
-    "func-call-spacing": ["error", "never"],
+    'func-call-spacing': ['error', 'never'],
     // 關鍵字前後空格 if  () => if()
-    "keyword-spacing": ["error", {
-      "overrides": {
-        "if": { "after": true, before: false },
-        "else": { "after": true, before: true },
+    'keyword-spacing': ['error', {
+      'overrides': {
+        'if': { 'after': true, before: false },
+        'else': { 'after': true, before: true },
       }
     }],
     // 物件取值不能有空格 obj  .  foo => obj.foo
-    "no-whitespace-before-property": "error",
+    'no-whitespace-before-property': 'error',
     // 最大連續空行数
-    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
+    'no-multiple-empty-lines': ['error', { 'max': 1, 'maxEOF': 0, 'maxBOF': 0 }],
     // 去除前後空行
-    "padded-blocks": ["error", "never"],
+    'padded-blocks': ['error', 'never'],
     // 操作符是否空格 a=0 => a = 0
-    "space-infix-ops": "error",
+    'space-infix-ops': 'error',
     // 操作符空格 + -
-    "space-unary-ops": "error",
+    'space-unary-ops': 'error',
     // 箭頭函数空格 ()=>{}  => () => {}
-    "arrow-spacing": ["error", { "before": true, "after": true }],
+    'arrow-spacing': ['error', { 'before': true, 'after': true }],
     // 解構不空白 {... f} => {...f}
-    "rest-spread-spacing": "error",
+    'rest-spread-spacing': 'error',
     // 字串中空格 `${ fo }`
-    "template-curly-spacing": ["error", "always"],
+    'template-curly-spacing': ['error', 'always'],
     // 禁止重複的 import
-    "no-duplicate-imports": "error",
+    'no-duplicate-imports': 'error',
     // 注解空一格 //a => // a
-    "spaced-comment": ["error", "always"],
+    'spaced-comment': ['error', 'always'],
     // 使用單引號，字串中可以包含了一個其它引號 "a string containing 'single' quotes"
-    quotes: ["error", "single", { "avoidEscape": true }],
-    "eol-last": ["error", "never"],
+    quotes: ['error', 'single', { 'avoidEscape': true }],
+    'eol-last': ['error', 'never'],
     'vue/order-in-components': ['error', {
       order: [
         'el',
