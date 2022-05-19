@@ -21,6 +21,18 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    "no-multi-spaces": "error",
+    "indent": ["error", 2],
+    'key-spacing': ['error', { beforeColon: false, afterColon: true }],
+    'object-curly-spacing': ['error', 'always'],
+    "space-in-parens": ["error", "never"],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "spaced-comment": ["error", "always"],
+    "space-infix-ops": "error",
+    "space-unary-ops": "error",
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    'quotes': ["error", "single", { "avoidEscape": true }],
+    "no-duplicate-imports": "error",
     'vue/order-in-components': ['error', {
       order: [
         'el',
