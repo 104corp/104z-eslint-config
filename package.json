@@ -11,6 +11,10 @@
   "dependencies": {
     "@vue/eslint-config-standard": "^7.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^8.5.0"
+    "eslint": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^8.7.1"
   }
 }
