@@ -17,7 +17,7 @@ module.exports = {
     // 物件空格 {   a:b   } => { a:b }
     'object-curly-spacing': ['error', 'always'],
     // 物件換行
-    'object-property-newline': 'error',
+    'object-curly-newline': ['error',{ "multiline": true, "minProperties": 2 }],
     // 括號去除空格 foo(   'bar'   ) =>  foo('bar');
     'space-in-parens': ['error', 'never'],
     // 物件前後只有一個空格{ 'foo'  :    42 } => { 'foo': 42 };
