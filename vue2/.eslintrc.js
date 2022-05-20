@@ -9,7 +9,14 @@ module.exports = {
   ],
   parser: '@babel/eslint-parser',
   parserOptions: {
-    requireConfigFile: false
+    requireConfigFile: false,
+    ecmaVersion: 6,
+    sourceType: "module",
+    ecmaFeatures: {
+        jsx: true,
+        modules: true,
+        experimentalObjectRestSpread: true
+    }
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
