@@ -27,6 +27,8 @@ module.exports = {
     'indent': ['error', 2],
     // 物件空格 {   a:b   } => { a:b }
     'object-curly-spacing': ['error', 'always'],
+    // 物件換行
+    'object-property-newline': 'error',
     // 括號去除空格 foo(   'bar'   ) =>  foo('bar');
     'space-in-parens': ['error', 'never'],
     // 物件前後只有一個空格{ 'foo'  :    42 } => { 'foo': 42 };
@@ -35,8 +37,10 @@ module.exports = {
     'comma-spacing': ['error', { 'before': false, 'after': true }],
     // array 内使用空格 [ 1,2   ] => [ 1,2 ]
     'array-bracket-spacing': ['error', 'always'],
-    // if else 风格
+    // if else 風格
     'brace-style': ['error', '1tbs'],
+    // function 後面要空格 
+    'space-before-function-paren': ['error','always'],
     // call 函数空格 fn  () => fn()
     'func-call-spacing': ['error', 'never'],
     // 關鍵字前後空格 if ()
@@ -131,6 +135,8 @@ module.exports = {
     // script setup 變數自動 return 所以不一定需要使用
     'vue/script-setup-uses-vars': 'error',
     'vue/key-spacing': ['error', { beforeColon: false, afterColon: true }],
+    // 物件換行
+    'vue/object-property-newline': 'error',
     'vue/object-curly-spacing': ['error', 'always'],
     'vue/padding-line-between-blocks': ['error', 'always'],
     'vue/prefer-separate-static-class': ['error']
