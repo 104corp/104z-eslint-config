@@ -7,8 +7,9 @@ module.exports = {
     'plugin:vue/recommended',
     '@vue/standard'
   ],
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    parser: 'babel-eslint'
+    requireConfigFile: false
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
