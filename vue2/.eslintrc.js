@@ -1,23 +1,12 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
+    browser: true
   },
   extends: [
-    'plugin:vue/recommended',
-    '@vue/standard'
+    'plugin:vue/recommended'
   ],
-  parser: '@babel/eslint-parser',
-  parserOptions: {
-    requireConfigFile: false,
-    ecmaVersion: 6,
-    sourceType: "module",
-    ecmaFeatures: {
-        jsx: true,
-        modules: true,
-        experimentalObjectRestSpread: true
-    }
-  },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
