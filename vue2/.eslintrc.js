@@ -113,6 +113,10 @@ module.exports = {
       registeredComponentsOnly: false,
       ignores: ['/^router-/', '/^keep-/', '/^transition/', '/^component/']
     }],
+    // vue 檔案名稱需要為多字
+    'vue/multi-word-component-names': ['error', {
+      ignores: ['index']
+    }],
     'vue/key-spacing': ['error', { beforeColon: false, afterColon: true }],
     'vue/object-curly-spacing': ['error', 'always'],
     'vue/padding-line-between-blocks': ['error', 'always'],
