@@ -127,6 +127,7 @@ module.exports = {
     'vue/object-curly-spacing': ['error', 'always'],
     'object-curly-newline': ['error',{ 'multiline': false }],
     'vue/padding-line-between-blocks': ['error', 'always'],
-    'vue/prefer-separate-static-class': ['error']
+    'vue/prefer-separate-static-class': ['error'],
+    'vue/comment-directive': 'off'
   }
 }
