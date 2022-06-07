@@ -72,6 +72,7 @@ module.exports = {
     'spaced-comment': ['error', 'always'],
     // 使用單引號，字串中可以包含了一個其它引號 "a string containing 'single' quotes"
     quotes: ['error', 'single', { 'avoidEscape': true }],
+    semi: ['error', 'never'],
     'eol-last': ['error', 'never'],
     'vue/order-in-components': ['error', {
       order: [
