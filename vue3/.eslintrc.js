@@ -126,7 +126,7 @@ module.exports = {
         math: 'never'
       }
     ],
-    'vue/component-name-in-template-casing': ['error', 'PascalCase', {
+    'vue/component-name-in-template-casing': ['error', 'PascalCase' | 'kebab-case', {
       registeredComponentsOnly: false,
       ignores: ['/^router-/', '/^keep-/', '/^transition/', '/^component/']
     }],
