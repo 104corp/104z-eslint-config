@@ -21,6 +21,7 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-unused-vars': "error",
     // 不連續空格
     'no-multi-spaces': 'error',
     // 空2格
@@ -72,6 +73,7 @@ module.exports = {
     'spaced-comment': ['error', 'always'],
     // 使用單引號，字串中可以包含了一個其它引號 "a string containing 'single' quotes"
     quotes: ['error', 'single', { 'avoidEscape': true }],
+    semi: ['error', 'never'],
     'eol-last': ['error', 'never'],
     'vue/order-in-components': ['error', {
       order: [
@@ -124,7 +126,7 @@ module.exports = {
         math: 'never'
       }
     ],
-    'vue/component-name-in-template-casing': ['error', 'PascalCase', {
+    'vue/component-name-in-template-casing': ['error', 'PascalCase' | 'kebab-case', {
       registeredComponentsOnly: false,
       ignores: ['/^router-/', '/^keep-/', '/^transition/', '/^component/']
     }],
@@ -139,6 +141,7 @@ module.exports = {
     'vue/object-property-newline': 'error',
     'vue/object-curly-spacing': ['error', 'always'],
     'vue/padding-line-between-blocks': ['error', 'always'],
-    'vue/prefer-separate-static-class': ['error']
+    'vue/prefer-separate-static-class': ['error'],
+    'vue/comment-directive': 'off'
   }
 }
