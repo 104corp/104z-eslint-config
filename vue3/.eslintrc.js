@@ -126,9 +126,9 @@ module.exports = {
         math: 'never'
       }
     ],
-    'vue/component-name-in-template-casing': ['error', 'PascalCase' | 'kebab-case', {
-      registeredComponentsOnly: false,
-      ignores: ['/^router-/', '/^keep-/', '/^transition/', '/^component/']
+    'vue/component-name-in-template-casing': ['error', 'PascalCase', {
+      registeredComponentsOnly: true,
+      ignores: []
     }],
     // vue 檔案名稱需要為多字
     'vue/multi-word-component-names': ['error', {
